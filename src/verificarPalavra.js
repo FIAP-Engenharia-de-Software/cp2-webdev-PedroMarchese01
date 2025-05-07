@@ -10,7 +10,19 @@
 // - Remove espaços extras no início e no final da frase antes de realizar a verificação.
 
 function verificarPalavra(frase, palavraBusca) {
-  // TODO: implementar função
+  let fras = frase.trim()
+  let busca = palavraBusca.trim()
+  if(fras.lenght() < 5){
+    return "A frase é muito curta"
+  }else{
+
+    if(fras.toLowerCase().includes(busca.toLowerCase())){
+      return "A frase contém a palavra de busca"
+    }else{
+      return "A frase não contém a palavra de busca"
+    }
+
+  }
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO
